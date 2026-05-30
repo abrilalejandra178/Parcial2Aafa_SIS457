@@ -1,0 +1,79 @@
+﻿using CadParcial2Aafa;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClnParcial2Aafa
+{
+    public class ProgramaCln
+    {
+        public static int crear(Programa programa)
+        {
+            using(var context = new Parcial2AafaEntities())
+            {
+                context.Programa.Add(programa);
+                context.SaveChanges();
+                return programa.id;
+            }
+        }
+        public static int modificar(Programa programa)
+        {
+            using (var context = new Parcial2AafaEntities())
+            {
+                var existente = context.Programa.Find(programa.id);
+                if (existente != null)
+                {
+                    existente.idCanal = programa.idCanal;
+                    existente.titulo = programa.titulo;
+                    existente.descripcion = programa.descripcion;
+                    existente.duracion = programa.duracion;
+                    existente.productor = programa.productor;
+                    existente.usuarioRegistro = programa.usuarioRegistro;
+                    return context.SaveChanges();
+                }
+                return 0;
+            }
+        }
+        public static int eliminar(int id, string usuarioRegistro)
+        {
+            using (var context = new Parcial2AafaEntities())
+            {
+                var existente = context.Programa.Find(id);
+                if (existente != null)
+                {
+                    existente.estado = -1;
+                    existente.usuarioRegistro = usuarioRegistro;
+                    return context.SaveChanges();
+                }
+                return 0;
+            }
+        }
+        public static Programa obtenerUno(int id)
+        {
+            using (var context = new Parcial2AafaEntities())
+            {
+                return context.Programa.Find(id);     
+            }
+        }
+        public static List<Programa> listar(int id)
+        {
+            using (var context = new Parcial2AafaEntities())
+            {
+                return context.Programa
+                    .Where(x => x.estado == 1)
+                    .OrderBy(x => x.descripcion)
+                    .ToList();
+            }
+        }
+        public static List<paProgramaListar_Result> listarPa(string parametro)
+        {
+            using (var context = new Parcial2AafaEntities())
+            {
+                return context.paProgramaListar(parametro.Trim()).ToList();
+            }
+        }
+    }
+}

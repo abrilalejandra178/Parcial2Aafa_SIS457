@@ -1,0 +1,15 @@
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\ClnParcial2Aafa.dll.config
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\ClnParcial2Aafa.dll
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\ClnParcial2Aafa.pdb
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\CadParcial2Aafa.dll
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\EntityFramework.dll
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\EntityFramework.SqlServer.dll
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\CadParcial2Aafa.pdb
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\CadParcial2Aafa.dll.config
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\EntityFramework.xml
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\bin\Debug\EntityFramework.SqlServer.xml
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\obj\Debug\ClnParcial2Aafa.csproj.AssemblyReference.cache
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\obj\Debug\ClnParcial2Aafa.csproj.CoreCompileInputs.cache
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\obj\Debug\ClnParci.0F06A1B4.Up2Date
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\obj\Debug\ClnParcial2Aafa.dll
+D:\SIS457\2doParcialSIS457\Parcial2Aafa\ClnParcial2Aafa\obj\Debug\ClnParcial2Aafa.pdb
