@@ -36,22 +36,6 @@
             this.txtParametro = new System.Windows.Forms.TextBox();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.lblCanal = new System.Windows.Forms.Label();
-            this.lblTitulos = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.cbxCanal = new System.Windows.Forms.ComboBox();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.lblProductor = new System.Windows.Forms.Label();
-            this.lblDuracion = new System.Windows.Forms.Label();
-            this.nudDuracion = new System.Windows.Forms.NumericUpDown();
-            this.txtProductor = new System.Windows.Forms.TextBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.erpDescripcion = new System.Windows.Forms.ErrorProvider(this.components);
@@ -59,16 +43,19 @@
             this.erpCanal = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpProductor = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpDuracion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbxCategorias = new System.Windows.Forms.ComboBox();
+            this.lblCategorias = new System.Windows.Forms.Label();
+            this.dgvGuardar = new System.Windows.Forms.DataGridView();
+            this.btnGuardar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAcciones.SuspendLayout();
-            this.gbxDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDuracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCanal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProductor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpDuracion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGuardar)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -129,193 +116,21 @@
             // 
             // pnlAcciones
             // 
-            this.pnlAcciones.Controls.Add(this.btnCerrar);
-            this.pnlAcciones.Controls.Add(this.btnEliminar);
-            this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
             this.pnlAcciones.Location = new System.Drawing.Point(34, 304);
             this.pnlAcciones.Name = "pnlAcciones";
             this.pnlAcciones.Size = new System.Drawing.Size(1113, 90);
             this.pnlAcciones.TabIndex = 6;
             // 
-            // gbxDatos
-            // 
-            this.gbxDatos.Controls.Add(this.btnCancelar);
-            this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.Controls.Add(this.txtProductor);
-            this.gbxDatos.Controls.Add(this.nudDuracion);
-            this.gbxDatos.Controls.Add(this.lblDuracion);
-            this.gbxDatos.Controls.Add(this.lblProductor);
-            this.gbxDatos.Controls.Add(this.txtTitulo);
-            this.gbxDatos.Controls.Add(this.cbxCanal);
-            this.gbxDatos.Controls.Add(this.txtDescripcion);
-            this.gbxDatos.Controls.Add(this.lblDescripcion);
-            this.gbxDatos.Controls.Add(this.lblTitulos);
-            this.gbxDatos.Controls.Add(this.lblCanal);
-            this.gbxDatos.Location = new System.Drawing.Point(34, 400);
-            this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(1113, 228);
-            this.gbxDatos.TabIndex = 7;
-            this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "Datos";
-            // 
-            // lblCanal
-            // 
-            this.lblCanal.AutoSize = true;
-            this.lblCanal.Location = new System.Drawing.Point(20, 31);
-            this.lblCanal.Name = "lblCanal";
-            this.lblCanal.Size = new System.Drawing.Size(75, 29);
-            this.lblCanal.TabIndex = 0;
-            this.lblCanal.Text = "Canal";
-            // 
-            // lblTitulos
-            // 
-            this.lblTitulos.AutoSize = true;
-            this.lblTitulos.Location = new System.Drawing.Point(21, 70);
-            this.lblTitulos.Name = "lblTitulos";
-            this.lblTitulos.Size = new System.Drawing.Size(74, 29);
-            this.lblTitulos.TabIndex = 1;
-            this.lblTitulos.Text = "Titulo";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(21, 109);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(141, 29);
-            this.lblDescripcion.TabIndex = 2;
-            this.lblDescripcion.Text = "Descripcion";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(181, 109);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(376, 35);
-            this.txtDescripcion.TabIndex = 3;
-            // 
-            // cbxCanal
-            // 
-            this.cbxCanal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxCanal.FormattingEnabled = true;
-            this.cbxCanal.Location = new System.Drawing.Point(181, 28);
-            this.cbxCanal.Name = "cbxCanal";
-            this.cbxCanal.Size = new System.Drawing.Size(376, 37);
-            this.cbxCanal.TabIndex = 4;
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.Location = new System.Drawing.Point(181, 68);
-            this.txtTitulo.MaxLength = 100;
-            this.txtTitulo.Multiline = true;
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(376, 35);
-            this.txtTitulo.TabIndex = 5;
-            // 
-            // lblProductor
-            // 
-            this.lblProductor.AutoSize = true;
-            this.lblProductor.Location = new System.Drawing.Point(576, 36);
-            this.lblProductor.Name = "lblProductor";
-            this.lblProductor.Size = new System.Drawing.Size(118, 29);
-            this.lblProductor.TabIndex = 6;
-            this.lblProductor.Text = "Productor";
-            // 
-            // lblDuracion
-            // 
-            this.lblDuracion.AutoSize = true;
-            this.lblDuracion.Location = new System.Drawing.Point(576, 74);
-            this.lblDuracion.Name = "lblDuracion";
-            this.lblDuracion.Size = new System.Drawing.Size(109, 29);
-            this.lblDuracion.TabIndex = 7;
-            this.lblDuracion.Text = "Duracion";
-            // 
-            // nudDuracion
-            // 
-            this.nudDuracion.Location = new System.Drawing.Point(741, 74);
-            this.nudDuracion.Name = "nudDuracion";
-            this.nudDuracion.Size = new System.Drawing.Size(334, 35);
-            this.nudDuracion.TabIndex = 8;
-            // 
-            // txtProductor
-            // 
-            this.txtProductor.Location = new System.Drawing.Point(741, 36);
-            this.txtProductor.MaxLength = 100;
-            this.txtProductor.Name = "txtProductor";
-            this.txtProductor.Size = new System.Drawing.Size(334, 35);
-            this.txtProductor.TabIndex = 9;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = global::Parcial2Aafa.Properties.Resources.cancel;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(928, 126);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(147, 49);
-            this.btnCancelar.TabIndex = 12;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = global::Parcial2Aafa.Properties.Resources.save;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(767, 126);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(143, 49);
-            this.btnGuardar.TabIndex = 11;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = global::Parcial2Aafa.Properties.Resources.close;
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(789, 23);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(121, 49);
-            this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Image = global::Parcial2Aafa.Properties.Resources.delete;
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(618, 23);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(140, 49);
-            this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Image = global::Parcial2Aafa.Properties.Resources.edit;
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(462, 23);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(126, 49);
-            this.btnEditar.TabIndex = 8;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
             // btnNuevo
             // 
             this.btnNuevo.Image = global::Parcial2Aafa.Properties.Resources._new;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(302, 23);
+            this.btnNuevo.Location = new System.Drawing.Point(431, 23);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(126, 49);
+            this.btnNuevo.Size = new System.Drawing.Size(171, 49);
             this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "Categorias";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -353,13 +168,57 @@
             // 
             this.erpDuracion.ContainerControl = this;
             // 
+            // cbxCategorias
+            // 
+            this.cbxCategorias.FormattingEnabled = true;
+            this.cbxCategorias.Location = new System.Drawing.Point(223, 449);
+            this.cbxCategorias.Name = "cbxCategorias";
+            this.cbxCategorias.Size = new System.Drawing.Size(217, 37);
+            this.cbxCategorias.TabIndex = 7;
+            this.cbxCategorias.SelectedIndexChanged += new System.EventHandler(this.cbxCategorias_SelectedIndexChanged);
+            // 
+            // lblCategorias
+            // 
+            this.lblCategorias.AutoSize = true;
+            this.lblCategorias.Location = new System.Drawing.Point(66, 449);
+            this.lblCategorias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategorias.Name = "lblCategorias";
+            this.lblCategorias.Size = new System.Drawing.Size(130, 29);
+            this.lblCategorias.TabIndex = 8;
+            this.lblCategorias.Text = "Categorias";
+            // 
+            // dgvGuardar
+            // 
+            this.dgvGuardar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGuardar.Location = new System.Drawing.Point(34, 503);
+            this.dgvGuardar.Name = "dgvGuardar";
+            this.dgvGuardar.RowHeadersWidth = 62;
+            this.dgvGuardar.RowTemplate.Height = 28;
+            this.dgvGuardar.Size = new System.Drawing.Size(1088, 136);
+            this.dgvGuardar.TabIndex = 9;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::Parcial2Aafa.Properties.Resources.save;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(530, 439);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(171, 49);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
             // FrmPrograma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(1174, 597);
-            this.Controls.Add(this.gbxDatos);
+            this.ClientSize = new System.Drawing.Size(1174, 651);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.dgvGuardar);
+            this.Controls.Add(this.lblCategorias);
+            this.Controls.Add(this.cbxCategorias);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);
             this.Controls.Add(this.btnBuscar);
@@ -378,14 +237,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.gbxLista.ResumeLayout(false);
             this.pnlAcciones.ResumeLayout(false);
-            this.gbxDatos.ResumeLayout(false);
-            this.gbxDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDuracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCanal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProductor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpDuracion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGuardar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,27 +258,15 @@
         private System.Windows.Forms.GroupBox gbxLista;
         private System.Windows.Forms.Panel pnlAcciones;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.GroupBox gbxDatos;
-        private System.Windows.Forms.Label lblCanal;
-        private System.Windows.Forms.Label lblTitulos;
-        private System.Windows.Forms.TextBox txtTitulo;
-        private System.Windows.Forms.ComboBox cbxCanal;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.TextBox txtProductor;
-        private System.Windows.Forms.NumericUpDown nudDuracion;
-        private System.Windows.Forms.Label lblDuracion;
-        private System.Windows.Forms.Label lblProductor;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ErrorProvider erpDescripcion;
         private System.Windows.Forms.ErrorProvider erpTitulo;
         private System.Windows.Forms.ErrorProvider erpCanal;
         private System.Windows.Forms.ErrorProvider erpProductor;
         private System.Windows.Forms.ErrorProvider erpDuracion;
+        private System.Windows.Forms.Label lblCategorias;
+        private System.Windows.Forms.ComboBox cbxCategorias;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.DataGridView dgvGuardar;
     }
 }
 

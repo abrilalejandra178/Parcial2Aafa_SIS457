@@ -5,9 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="7e6990607ab84484acdd05e3d932d34c" Name="Diagram1">
-        <EntityTypeShape EntityType="Parcial2AafaModel.Canal" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="Parcial2AafaModel.Canal" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="Parcial2AafaModel.CategoriaPrograma" Width="1.5" PointX="0.75" PointY="5.875" />
         <EntityTypeShape EntityType="Parcial2AafaModel.Programa" Width="1.5" PointX="3" PointY="1" />
         <AssociationConnector Association="Parcial2AafaModel.FK_Programa_Canal" />
+        <AssociationConnector Association="Parcial2AafaModel.FK_Porgrama_CategoriaPrograma" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

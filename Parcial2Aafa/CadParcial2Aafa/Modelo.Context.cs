@@ -28,6 +28,7 @@ namespace CadParcial2Aafa
         }
     
         public virtual DbSet<Canal> Canal { get; set; }
+        public virtual DbSet<CategoriaPrograma> CategoriaPrograma { get; set; }
         public virtual DbSet<Programa> Programa { get; set; }
     
         public virtual ObjectResult<paProgramaListar_Result> paProgramaListar(string parametro)

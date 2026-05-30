@@ -21,8 +21,19 @@
     <EntitySetMapping Name="Canal">
       <EntityTypeMapping TypeName="Parcial2AafaModel.Canal">
         <MappingFragment StoreEntitySet="Canal">
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
           <ScalarProperty Name="frecuencia" ColumnName="frecuencia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoriaPrograma">
+      <EntityTypeMapping TypeName="Parcial2AafaModel.CategoriaPrograma">
+        <MappingFragment StoreEntitySet="CategoriaPrograma">
+          <ScalarProperty Name="estado" ColumnName="estado" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
@@ -39,6 +50,7 @@
           <ScalarProperty Name="duracion" ColumnName="duracion" />
           <ScalarProperty Name="descripcion" ColumnName="descripcion" />
           <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="idCategoriaPrograma" ColumnName="idCategoriaPrograma" />
           <ScalarProperty Name="idCanal" ColumnName="idCanal" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>

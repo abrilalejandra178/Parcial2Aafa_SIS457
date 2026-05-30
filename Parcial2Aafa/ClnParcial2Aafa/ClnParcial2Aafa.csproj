@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanalCln.cs" />
+    <Compile Include="CategoriaProgramaCln.cs" />
     <Compile Include="ProgramaCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

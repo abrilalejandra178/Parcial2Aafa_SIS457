@@ -81,7 +81,7 @@ namespace Parcial2Aafa
                 erpDescripcion.SetError(txtDescripcion, "La Descripcion es obligatorio");
                 esValido = false;
             }
-            if (string.IsNullOrWhiteSpace (cbxCanal.Text))
+            if (string.IsNullOrWhiteSpace(cbxCanal.Text))
             {
                 erpCanal.SetError(cbxCanal, "El canal es obligatorio");
                 esValido = false;
@@ -91,7 +91,7 @@ namespace Parcial2Aafa
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
